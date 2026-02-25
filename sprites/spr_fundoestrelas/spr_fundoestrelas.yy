@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_fundoestrelas",
   "bboxMode":0,
-  "bbox_bottom":456,
+  "bbox_bottom":359,
   "bbox_left":0,
-  "bbox_right":786,
+  "bbox_right":699,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -23,7 +23,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":457,
+  "height":360,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"40b1182b-e8f1-4025-903c-568ed0c39a5a","blendMode":0,"displayName":"default","isLocked":false,"name":"40b1182b-e8f1-4025-903c-568ed0c39a5a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -114,5 +114,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":787,
+  "width":700,
 }

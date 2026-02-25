@@ -6,7 +6,13 @@ if (variable_global_exists("spawn_x")) {
 	y = 224
 }
  }
-if (room == Room12) {
+if (room == Room12)  {
+   x = 128 
+   y = 224
+	
+	
+}
+if (room == Room14)  {
    x = 128 
    y = 224
 	

@@ -110,7 +110,7 @@ if (_change_room) {
 	if (room ==Room8) room_goto(Room5);
     if (room == Room9) room_goto(Room7) ; 
 	if (room = Room13) room_goto(Room12)
-	if (room = Room14) room_goto(Room15)
+	if (room = Room15) room_goto(Room14)
 	}
 }
     
