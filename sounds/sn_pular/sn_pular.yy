@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sn_pular",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.42160997,
+  "exportDir":"",
+  "name":"sn_pular",
+  "parent":{
+    "name":"angebang",
+    "path":"angebang.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sn_pular.mp3",
+  "volume":1.0,
+}

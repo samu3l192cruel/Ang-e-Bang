@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sn_dash",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.5960997,
+  "exportDir":"",
+  "name":"sn_dash",
+  "parent":{
+    "name":"angebang",
+    "path":"angebang.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sn_dash.mp3",
+  "volume":1.0,
+}

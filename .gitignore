@@ -1,0 +1,36 @@
+## Arquivos temporários / de sistema
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+.DS_Store
+
+## Arquivos de backup de editor
+*.bak
+*.swp
+*.swo
+
+## Arquivos compactados / exportações
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.yyz
+
+## Diretórios comuns de build (ajuste se necessário)
+build/
+Build/
+dist/
+Dist/
+output/
+Output/
+
+## VS Code / Cursor
+.vscode/
+.cursor/
+
+## IDEs
+.idea/
+.vs/
+

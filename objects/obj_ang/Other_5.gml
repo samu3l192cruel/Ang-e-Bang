@@ -1,0 +1,1 @@
+	audio_play_sound(sn_teleporte,0,false)
