@@ -1,5 +1,5 @@
 // Movimento
-walk_spd = 4;
+walk_spd = 3.2;
 jump_spd = -12;
 grv = 0.6;
 

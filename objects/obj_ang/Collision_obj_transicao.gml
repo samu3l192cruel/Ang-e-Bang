@@ -16,6 +16,14 @@ room_goto(Room16)
 
 }
 if (room ==Room16) {
-	room_goto(Room18)
+	room_goto(Room20)
 	
+}
+if (room == Room20) {
+   room_goto(Room18)	
+  	
+}
+if (room == Room18) {
+   room_goto(Room21)	
+  	
 }

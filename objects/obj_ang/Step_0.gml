@@ -5,7 +5,7 @@ var _key_left   = keyboard_check(vk_left)  || keyboard_check(ord("A"));
 var _key_right  = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var _key_jump   = keyboard_check_pressed(vk_space);
 var _key_dash   = keyboard_check_pressed(vk_shift);
-var _key_attack = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("Z"));
+
 
 // ==========================
 // 2. CALCULAR MOVIMENTO HORIZONTAL
@@ -55,12 +55,6 @@ if (is_attacking) {
         vspd = jump_spd;
     }
 
-    // Ataque
-    if (_key_attack) {
-        is_attacking = true;
-        sprite_index = spr_ANGATK;
-        image_index = 0;
-    }
 
     // Dash
     if (_key_dash && can_dash) {
@@ -78,33 +72,18 @@ if (is_attacking) {
 // ==========================
 
 // Horizontal
-if (place_meeting(x + hspd, y, obj_bloco) 
- || place_meeting(x + hspd, y, obj_ponte)
- || place_meeting(x + hspd, y, obj_colisao)) {
-     
-    while (!place_meeting(x + sign(hspd), y, obj_bloco)
-        && !place_meeting(x + sign(hspd), y, obj_ponte)
-        && !place_meeting(x + sign(hspd), y, obj_colisao)) {
-        x += sign(hspd);
-    }
+if (place_meeting(x + hspd, y, obj_bloco)) {
+    while (!place_meeting(x + sign(hspd), y, obj_bloco)) x += sign(hspd);
     hspd = 0;
 }
 x += hspd;
 
 // Vertical
-if (place_meeting(x, y + vspd, obj_bloco)
- || place_meeting(x, y + vspd, obj_ponte)
- || place_meeting(x, y + vspd, obj_colisao)) {
-
-    while (!place_meeting(x, y + sign(vspd), obj_bloco)
-        && !place_meeting(x, y + sign(vspd), obj_ponte)
-        && !place_meeting(x, y + sign(vspd), obj_colisao)) {
-        y += sign(vspd);
-    }
+if (place_meeting(x, y + vspd, obj_bloco)) {
+    while (!place_meeting(x, y + sign(vspd), obj_bloco)) y += sign(vspd);
     vspd = 0;
 }
 y += vspd;
-
 // ==========================
 // 6. ANIMAÇÕES
 // ==========================
@@ -138,7 +117,7 @@ if (keyboard_check_pressed(ord("E"))) {
     if (room == Room12) room_goto(Room13);
     if (room == Room14) room_goto(Room15);
     if (room == Room16) room_goto(Room17);
-	 if (room == Room18) room_goto(Room19);
+	 if (room == Room20) room_goto(Room19);
 }
 
 // ==========================
