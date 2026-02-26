@@ -11,3 +11,11 @@ if (room ==Room12) {
 room_goto(Room14)
 
 }
+if (room ==Room14) {
+room_goto(Room16)
+
+}
+if (room ==Room16) {
+	room_goto(Room18)
+	
+}

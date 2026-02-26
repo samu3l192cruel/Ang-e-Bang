@@ -2,7 +2,7 @@
 if (keyboard_check_pressed(vk_shift)) {
     shake = true;
     shake_time = 15;        // Quantos frames dura o tremor
-    shake_magnitude = 3;   // Força do tremor (em pixels)
+    shake_magnitude = 5;   // Força do tremor (em pixels)
     shake_fade = 0.5;       // Quanto diminui por frame
 }
 // 1. Detetar o clique no Shift (ativ

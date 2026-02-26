@@ -111,6 +111,8 @@ if (_change_room) {
     if (room == Room9) room_goto(Room7) ; 
 	if (room = Room13) room_goto(Room12)
 	if (room = Room15) room_goto(Room14)
+    if (room = Room17) room_goto(Room16)
+    if (room == Room19) room_goto(Room18);
 	}
 }
     
