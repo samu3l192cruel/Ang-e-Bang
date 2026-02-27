@@ -27,3 +27,7 @@ if (room == Room18) {
    room_goto(Room21)	
   	
 }
+if (room == Room21) {
+  room_goto(Room22)	
+ 	
+}
