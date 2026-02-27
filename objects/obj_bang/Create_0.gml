@@ -1,5 +1,5 @@
 // Movimento
-walk_spd = 3.2;
+walk_spd = 2.28;
 jump_spd = -10;
 grv = 0.5;
 
@@ -17,3 +17,4 @@ if (variable_global_exists("spawn_x")) {
     x = global.spawn_x;
     y = global.spawn_y;
 }
+

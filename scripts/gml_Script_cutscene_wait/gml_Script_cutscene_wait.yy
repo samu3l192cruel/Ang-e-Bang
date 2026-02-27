@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"gml_Script_cutscene_wait",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gml_Script_cutscene_wait",
+  "parent":{
+    "name":"angebang",
+    "path":"angebang.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

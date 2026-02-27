@@ -1,14 +1,14 @@
 // Movimento
-walk_spd = 3.2;
-jump_spd = -12;
+walk_spd = 2.8;
+jump_spd = -10;
 grv = 0.6;
 
 hspd = 0;
 vspd = 0;
 
 // Dash
-dash_spd = 14;      // velocidade do dash
-dash_time = 8;       // duração em frames
+dash_spd = 12;      // velocidade do dash
+dash_time = 10;       // duração em frames
 dash_timer = 0;
 can_dash = true;
 is_dashing = false;

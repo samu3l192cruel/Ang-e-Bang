@@ -4,7 +4,6 @@ var _key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var _key_jump  = keyboard_check_pressed(vk_space);
 var _key_dash  = keyboard_check_pressed(vk_shift);
 var _mouse_atk = mouse_check_button_pressed(mb_left);
-
 var _move = _key_right - _key_left;
 var _on_ground = place_meeting(x, y + 1, obj_bloco);
 

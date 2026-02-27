@@ -41,3 +41,7 @@ if (room ==Room19) {
 	room_goto(Room18)
 	
 }
+if (room ==Room24) {
+    room = Room25cutscene	
+	
+}
