@@ -85,7 +85,7 @@ if (place_meeting(x, y + vspd, obj_bloco)) {
 }
 y += vspd;
 // ==========================
-// 6. ANIMAÇÕES
+// 6. ANIMAÇÕES E PARTÍCULAS
 // ==========================
 if (!is_attacking) {
     if (hspd != 0) image_xscale = sign(hspd);
@@ -94,14 +94,32 @@ if (!is_attacking) {
         // aqui você pode colocar sprite de dash
     } else if (hspd != 0) {
         sprite_index = spr_ANGWALK;
+        
+        // --- ADIÇÃO: SISTEMA DE POEIRA ---
+        // Cria poeira se estiver no chão e no frame 0 ou 4 da animação de andar
+        if (_on_ground && (floor(image_index) == 0 || floor(image_index) == 4)) {
+            // Garante que cria apenas uma vez por frame de animação
+            if (!variable_instance_exists(id, "dust_spawned") || dust_spawned != floor(image_index)) {
+               var _p = instance_create_layer(x, bbox_bottom, "Instances", obj_poeira);
+
+                _p.hspeed = -hspd * 0.1; // Poeira vai levemente para trás
+                dust_spawned = floor(image_index);
+            }
+        }
     } else {
         sprite_index = spr_ANGIDLE;
+        dust_spawned = -1; // Reseta ao parar
     }
+} else {
+    dust_spawned = -1;
 }
 
 if (!_on_ground) {
     sprite_index = spr_ANGJUMP;
+    dust_spawned = -1;
 }
+
+
 
 // ==========================
 // 7. TROCA DE SALA

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bala",
+  "%Name":"obj_poeira",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_bloco","path":"objects/obj_bloco/obj_bloco.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_espinho","path":"objects/obj_espinho/obj_espinho.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bala",
+  "name":"obj_poeira",
   "overriddenProperties":[],
   "parent":{
     "name":"angebang",
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bala",
-    "path":"sprites/spr_bala/spr_bala.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
