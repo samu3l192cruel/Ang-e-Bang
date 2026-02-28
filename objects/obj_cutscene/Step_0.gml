@@ -11,7 +11,7 @@ if (image_alpha >= 1) { // Só conta o tempo após a imagem aparecer totalmente
 // Troca de Imagem / Room
 if (timer <= 0) {
     if (fase == 1) {
-        sprite_index = spr_cutscene2;
+        sprite_index = spr_cutscne2;
         image_alpha = 0; // Reseta o alpha para a nova imagem aparecer suavemente
         timer = 2 * game_get_speed(gamespeed_fps);
         fase = 2;

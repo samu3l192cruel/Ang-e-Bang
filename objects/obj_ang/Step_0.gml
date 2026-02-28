@@ -100,7 +100,7 @@ if (!is_attacking) {
         if (_on_ground && (floor(image_index) == 0 || floor(image_index) == 4)) {
             // Garante que cria apenas uma vez por frame de animação
             if (!variable_instance_exists(id, "dust_spawned") || dust_spawned != floor(image_index)) {
-               var _p = instance_create_layer(x, bbox_bottom, "Instances", obj_poeira);
+               var _p = instance_create_layer(x, bbox_bottom, "Instances", Object28);
 
                 _p.hspeed = -hspd * 0.1; // Poeira vai levemente para trás
                 dust_spawned = floor(image_index);
