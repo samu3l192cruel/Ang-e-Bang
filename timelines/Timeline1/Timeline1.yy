@@ -1,0 +1,12 @@
+{
+  "$GMTimeline":"",
+  "%Name":"Timeline1",
+  "momentList":[],
+  "name":"Timeline1",
+  "parent":{
+    "name":"angebang",
+    "path":"angebang.yyp",
+  },
+  "resourceType":"GMTimeline",
+  "resourceVersion":"2.0",
+}

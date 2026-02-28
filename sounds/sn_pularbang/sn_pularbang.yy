@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.69265306,
+  "duration":0.30115646,
   "exportDir":"",
   "name":"sn_pularbang",
   "parent":{

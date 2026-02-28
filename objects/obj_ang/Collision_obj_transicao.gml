@@ -35,6 +35,6 @@ if (room == Room22) {
   room_goto(Room23)	
  	
 }
-if (room ==23) {
+if (room == Room23) {
   room_goto(Room24)	
 }
