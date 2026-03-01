@@ -125,8 +125,6 @@ if (!_on_ground) {
 // 7. TROCA DE SALA
 // ==========================
 if (keyboard_check_pressed(ord("E"))) {
-    global.spawn_x = x;
-    global.spawn_y = y;
 
     if (room == Room1) room_goto(Room2);
     if (room == Room4) room_goto(Room3);
@@ -135,7 +133,7 @@ if (keyboard_check_pressed(ord("E"))) {
     if (room == Room12) room_goto(Room13);
     if (room == Room14) room_goto(Room15);
     if (room == Room16) room_goto(Room17);
-	 if (room == Room20) room_goto(Room19);
+    if (room == Room20) room_goto(Room19);
 }
 
 // ==========================
@@ -168,4 +166,12 @@ if (place_meeting(x, y, obj_inimigoseguranca)) {
 // ==========================
 if (_key_jump) {
     audio_play_sound(sn_pular, 10, false);
+}
+// No Step Event, só toca se NÃO estiver a tocar já
+if (!audio_is_playing(sn_musicafundo)) {
+    audio_play_sound(sn_musicafundo, 10, true);
+}
+if (room == Roommenu) {
+    audio_stop_all()	
+	
 }

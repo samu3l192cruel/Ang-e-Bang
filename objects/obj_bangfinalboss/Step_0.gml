@@ -93,38 +93,12 @@ if (place_meeting(x, y + vspd, obj_bloco)) {
     vspd = 0;
 }
 y += vspd;
-// ==========================
-// TROCA DE SALA
-// ==========================
-var _change_room = keyboard_check_pressed(ord("E"));
 
-if (_change_room) {
-
-    // Salva posição atual
-    global.spawn_x = x;
-    global.spawn_y = y;
-
-    if (room == Room2) room_goto(Room1);
-    if (room == Room3) room_goto(Room4) {
-	if (room ==Room8) room_goto(Room5);
-    if (room == Room9) room_goto(Room7) ; 
-	if (room = Room13) room_goto(Room12)
-	if (room = Room15) room_goto(Room14)
-    if (room = Room17) room_goto(Room16)
-    if (room == Room19) room_goto(Room20);
-	}
-}
-    
 if (!_on_ground) {
     sprite_index = spr_BANGJUMP;
 }
-if (keyboard_check_pressed(ord("R"))) {
 
-    global.spawn_x = 576;
-    global.spawn_y = 192;
 
-    room_restart();
-}
 if _key_jump {
   audio_play_sound(sn_pularbang,10,false)	
 }

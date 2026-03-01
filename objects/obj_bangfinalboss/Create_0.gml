@@ -13,10 +13,7 @@ dash_timer = 0;
 can_dash = true;
 is_dashing = false;
 is_attacking = false;
-if (variable_global_exists("spawn_x")) {
-    x = global.spawn_x;
-    y = global.spawn_y;
-}
 
+if (room == Room35)
 x = 576
 y = 192

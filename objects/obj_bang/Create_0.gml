@@ -18,3 +18,5 @@ if (variable_global_exists("spawn_x")) {
     y = global.spawn_y;
 }
 
+x = 128
+y = 224

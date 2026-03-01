@@ -121,42 +121,7 @@ if (!_on_ground) {
 
 
 
-// ==========================
-// 7. TROCA DE SALA
-// ==========================
-if (keyboard_check_pressed(ord("E"))) {
-    global.spawn_x = x;
-    global.spawn_y = y;
 
-    if (room == Room1) room_goto(Room2);
-    if (room == Room4) room_goto(Room3);
-    if (room == Room5) room_goto(Room8);
-    if (room == Room7) room_goto(Room9);
-    if (room == Room12) room_goto(Room13);
-    if (room == Room14) room_goto(Room15);
-    if (room == Room16) room_goto(Room17);
-	 if (room == Room20) room_goto(Room19);
-}
-
-// ==========================
-// 8. REINICIAR SALA
-// ==========================
-if (keyboard_check_pressed(ord("R"))) {
-    global.spawn_x = 128;
-    global.spawn_y = 224;
-    room_restart();
-}
-
-if (room > Room7) {
-    global.spawn_x = 128;
-    global.spawn_y = 224;
-}
-if (room == Room23) {
-    global.spawn_x = 128;
-    global.spawn_y = 224;
-}
-
-// ==========================
 // 9. COLISÃO COM INIMIGO
 // ==========================
 if (place_meeting(x, y, obj_inimigoseguranca)) {
