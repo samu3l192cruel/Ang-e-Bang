@@ -147,7 +147,11 @@ if (keyboard_check_pressed(ord("R"))) {
     room_restart();
 }
 
-if (room == Room7) {
+if (room > Room7) {
+    global.spawn_x = 128;
+    global.spawn_y = 224;
+}
+if (room == Room23) {
     global.spawn_x = 128;
     global.spawn_y = 224;
 }

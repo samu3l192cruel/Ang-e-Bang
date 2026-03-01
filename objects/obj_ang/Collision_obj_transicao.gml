@@ -47,3 +47,21 @@ if (room == Room27) {
 if (room == Room27_1) {
   room_goto(Room28)	
 }
+if (room == Room28) {
+  room_goto(Room29)	
+}
+if (room == Room29) {
+  room_goto(Room30)	
+}
+if (room == Room30) {
+  room_goto(Room31)	
+}
+if (room == Room31) {
+  room_goto(Room32)	
+}
+
+if (room == Room32) {
+  room_goto(Room33)	
+}
+
+ 
